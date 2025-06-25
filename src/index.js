@@ -20,7 +20,6 @@ export const Context = createContext();
 // localhost -> aws 서버
 // let host = 'http://localhost:8080';
 let host = null;
-console.log(window.location.hostname)
 if (window.location.hostname === "localhost") {
   host = 'http://localhost:8080';
 } else {
@@ -28,6 +27,8 @@ if (window.location.hostname === "localhost") {
   // 따라서 /api로 우회(프록시)할 것
   // 프록시? 가짜 요청 보내고 다시 실제 요청으로 변경
   // host = 'http://aws주소:8080' X
+  // API 주소 없이 중간 경로만 있음
+  // 상대 경로를 사용하면 현재 사이트 주소가 자동으로 붙음
   host = '/api';
 }
 console.log('현재 api주소: ', host)

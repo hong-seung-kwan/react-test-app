@@ -14,8 +14,8 @@ import { useContext } from 'react';
 // S3를 사용하기 전에, 임시로 업로드 파일을 React 프로젝트 안에 저장할 것
 
 // public 아래 images 폴더
-const IMG_PATH = 'C://uploadfile/';
-// const IMG_PATH = '/images/';
+// const IMG_PATH = 'C://uploadfile/';
+const IMG_PATH = '/images/';
 
 function BoardDetail() {
 
