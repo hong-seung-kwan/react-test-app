@@ -64,6 +64,7 @@ const handleSubmit = async (e) => {
   // 게시물 등록 API 호출
   // 등록은 post
   // 인자: 주소, 파라미터, 헤더
+
   const response = await axios.post(
     // 'http://localhost:8080/board/register',
     `${host}/board/register`,
