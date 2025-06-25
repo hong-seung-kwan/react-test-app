@@ -26,7 +26,7 @@ const Header = () => {
   // 스토어에서 상태값 가져오기
   // member 슬라이스의 사용자 정보 info를 선택
   const memberInfo = useSelector((state) => {
-    console.log(state); // root 아래 member가 있음
+    // console.log(state); // root 아래 member가 있음
     return state.member.info
   });
 
