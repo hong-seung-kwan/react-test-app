@@ -19,7 +19,8 @@ export const Context = createContext();
 // API 주소 변경
 // localhost -> aws 서버
 // let host = 'http://localhost:8080';
-let host = 'http://15.165.160.168:8080';
+let host = null;
+console.log(window.location.hostname)
 // let host;
 // if (window.location.hostname === "localhost") {
 //   host = 'http://localhost:8080';
