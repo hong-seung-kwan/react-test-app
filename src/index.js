@@ -21,13 +21,16 @@ export const Context = createContext();
 // let host = 'http://localhost:8080';
 let host = null;
 console.log(window.location.hostname)
-// let host;
-// if (window.location.hostname === "localhost") {
-//   host = 'http://localhost:8080';
-// } else {
-//   host = '/api';
-// }
-
+if (window.location.hostname === "localhost") {
+  host = 'http://localhost:8080';
+} else {
+  // AWS주소를 직접 사용하면 프로토콜 문제로 호출 안됨
+  // 따라서 /api로 우회(프록시)할 것
+  // 프록시? 가짜 요청 보내고 다시 실제 요청으로 변경
+  // host = 'http://aws주소:8080' X
+  host = '/api';
+}
+console.log('현재 api주소: ', host)
 // 로그인 정보 유지하기
 // 브라우저를 다시 열었을 때 로컬 스토리지에 인증정보가 있는지 확인
 // 인증정보가 있으면 로그인 처리
