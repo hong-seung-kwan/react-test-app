@@ -7,7 +7,7 @@ export const CustomCard = styled.div`
   align-items: center;
   padding: 24px;
   width: 1150px;
-  height: 600px;
+  height: 100%;
   margin: 50px;
   background: #ffffff;
   border-radius: 16px;

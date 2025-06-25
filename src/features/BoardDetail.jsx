@@ -87,7 +87,7 @@ function BoardDetail() {
             </Form.Group>
             {/* 이미지 */}
             <Form.Group className="mb-3">
-              <img src={`${IMG_PATH}${board.imgPath}`}></img>
+              <img src={`${board.imgPath}`}></img>
             </Form.Group>
 
             <Button variant="primary" onClick={() => {
